@@ -7,12 +7,14 @@ import android.view.Menu;
 public class StartingPoing extends Activity {
 
 	@Override
+	//TEST GIT COMMIT 20130216 13:58
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_starting_poing);
 	}
 
 	@Override
+	//TEST GIT COMMIT 20130216 13:58
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_starting_poing, menu);
