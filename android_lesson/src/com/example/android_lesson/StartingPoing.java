@@ -26,14 +26,16 @@ public class StartingPoing extends Activity {
 	//use setOnClickListener , onClick
 	add.setOnClickListener(new View.OnClickListener() {
 		public void onClick(View v){
-		//set actions after a CLICK buADD
-			
+		//set actions after a CLICK of buADD
+			counter = counter + 1;
+			result.setText("now the total equals "+ counter);
 		}
 	});
 	substract.setOnClickListener(new View.OnClickListener() {
 		public void onClick(View v){
-		//set actions after a CLICK buSUBSTRACT
-			
+		//set actions after a CLICK of buSUBSTRACT
+			counter = counter - 1;
+			result.setText("now the total equals "+ counter);
 		}
 	});
 	
