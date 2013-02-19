@@ -27,7 +27,7 @@ public class Opening extends Activity{
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				} finally {
-					Intent goStartPoing = new Intent("com.example.android_lesson.STARTINGPOINT");
+					Intent goStartPoing = new Intent("com.example.android_lesson.MENU");
 					startActivity(goStartPoing);
 				}
 			}
