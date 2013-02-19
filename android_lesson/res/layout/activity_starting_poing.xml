@@ -1,14 +1,36 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context=".StartingPoing" >
 
     <TextView
+        android:id="@+id/resultDisply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+        android:text="your total is 0"
+        android:textSize="45dp"
+        android:layout_gravity="center"
+        />
+    
+    <Button
+        android:id="@+id/buADD"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="ADD ONE"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
+    
+    <Button
+        android:id="@+id/buSUBSTRACT"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="SUBTRACT ONE"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
+    
+</LinearLayout>
