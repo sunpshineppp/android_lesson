@@ -2,9 +2,12 @@ package com.example.android_lesson;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 public class Opening extends Activity{
+	
+	MediaPlayer openingSong;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -12,6 +15,9 @@ public class Opening extends Activity{
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.opening);
+		
+		openingSong = MediaPlayer.create(Opening.this, R.raw.time_after_time);
+		openingSong.start();
 				
 		Thread timer = new Thread(){
 			
@@ -35,6 +41,7 @@ public class Opening extends Activity{
 	protected void onPause() {
 		// TODO Auto-generated method stub
 		super.onPause();
+		openingSong.release();
 		finish();
 	}
 	
