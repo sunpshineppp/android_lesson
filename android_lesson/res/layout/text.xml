@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
+    
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="type something !"
+        android:inputType="textPassword"
+        tools:ignore="HardcodedText"
+        />
+
+	    <LinearLayout
+	        android:weightSum="100"
+	        android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+	        >
+	    
+		    <Button
+		        android:id="@+id/buSetTextInput"
+		        android:layout_weight="30"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center"
+		        android:text="COMMAND"
+		        tools:ignore="HardcodedText" />
+		
+		    <ToggleButton
+		        android:id="@+id/tbuSwitchPassword"
+		        android:layout_weight="70"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text=""
+		        android:checked="true" 
+		        tools:ignore="HardcodedText"
+		        />
+	    
+	    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Look at me~"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" 
+        />
+
+</LinearLayout>
