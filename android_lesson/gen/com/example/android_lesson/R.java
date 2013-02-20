@@ -17,11 +17,11 @@ public final class R {
     public static final class id {
         public static final int buADD=0x7f080002;
         public static final int buSUBSTRACT=0x7f080003;
+        public static final int buSetTextInput=0x7f080005;
         public static final int menu_settings=0x7f080008;
         public static final int resultDisplay1=0x7f080000;
         public static final int resultDisplay2=0x7f080001;
-        public static final int setTextInput=0x7f080005;
-        public static final int switchPassword=0x7f080006;
+        public static final int tbuSwitchPassword=0x7f080006;
         public static final int textInput=0x7f080004;
         public static final int textOutput=0x7f080007;
     }
