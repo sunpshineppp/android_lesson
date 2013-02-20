@@ -1,5 +1,7 @@
 package com.example.android_lesson;
 
+import java.util.Random;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -40,19 +42,34 @@ public class Text extends Activity {
 			
 			public void onClick(View v) {
 				String getting = textIn.getText().toString();
-				if (getting.contentEquals("left")){
+				if (getting.contentEquals("l")){
 					textOut.setGravity(Gravity.LEFT);
-				} else if (getting.contentEquals("center")) {
+				} else if (getting.contentEquals("c")) {
 					textOut.setGravity(Gravity.CENTER);
-				} else if (getting.contentEquals("right")) {
+				} else if (getting.contentEquals("r")) {
 					textOut.setGravity(Gravity.RIGHT);
-				} else if (getting.contentEquals("blue")) {
+				} else if (getting.contentEquals("b")) {
 					textOut.setTextColor(Color.BLUE);
-				} else if (getting.contentEquals("~lol~")) {
-					
+				} else if (getting.contentEquals("wtf")) {
+					Random mad = new Random();
+					textOut.setText("~lol~");
+					textOut.setTextSize(mad.nextInt(100));
+					textOut.setTextColor(Color.rgb(mad.nextInt(255),mad.nextInt(255),mad.nextInt(255)));
+					switch(mad.nextInt(3)){
+					case 0:
+						textOut.setGravity(Gravity.RIGHT);
+						break;
+					case 1:
+						textOut.setGravity(Gravity.CENTER);
+						break;
+					case 2:
+						textOut.setGravity(Gravity.LEFT);
+						break;
+					}
 				} else {
-					textOut.setText("try typing & command");
+					textOut.setText("try typing : l c r b wtf");
 					textOut.setGravity(Gravity.CENTER);
+					textOut.setTextColor(Color.RED);
 				}
 			}
 		});
