@@ -3,6 +3,7 @@ package com.example.android_lesson;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.InputType;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,7 +22,7 @@ public class Text extends Activity {
 		Button getTextInput = (Button) findViewById(R.id.buSetTextInput);
 		final ToggleButton switchPassword = (ToggleButton) findViewById(R.id.tbuSwitchPassword);
 		final EditText textIn = (EditText) findViewById(R.id.textInput);
-		TextView textOut = (TextView) findViewById(R.id.textOutput);
+		final TextView textOut = (TextView) findViewById(R.id.textOutput);
 		
 		switchPassword.setOnClickListener(new View.OnClickListener() {
 			
@@ -39,10 +40,12 @@ public class Text extends Activity {
 			public void onClick(View v) {
 				String getting = textIn.getText().toString();
 				if (getting.contentEquals("left")){
-					
+					textOut.setGravity(Gravity.LEFT);
 				} else if (getting.contentEquals("center")) {
-					
+					textOut.setGravity(Gravity.CENTER);
 				} else if (getting.contentEquals("right")) {
+					textOut.setGravity(Gravity.RIGHT);
+				}  else if (getting.contentEquals("blue")) {
 					
 				}
 			}
