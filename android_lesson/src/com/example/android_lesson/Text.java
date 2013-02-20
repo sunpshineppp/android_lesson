@@ -1,6 +1,7 @@
 package com.example.android_lesson;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.Gravity;
@@ -45,8 +46,13 @@ public class Text extends Activity {
 					textOut.setGravity(Gravity.CENTER);
 				} else if (getting.contentEquals("right")) {
 					textOut.setGravity(Gravity.RIGHT);
-				}  else if (getting.contentEquals("blue")) {
+				} else if (getting.contentEquals("blue")) {
+					textOut.setTextColor(Color.BLUE);
+				} else if (getting.contentEquals("~lol~")) {
 					
+				} else {
+					textOut.setText("try typing & command");
+					textOut.setGravity(Gravity.CENTER);
 				}
 			}
 		});
