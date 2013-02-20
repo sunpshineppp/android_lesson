@@ -26,16 +26,28 @@ public class Text extends Activity {
 		switchPassword.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				
 				if (switchPassword.isChecked()) {
 					textIn.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
 				} else{
 					textIn.setInputType(InputType.TYPE_CLASS_TEXT);
 				}
-				
 			}
-			
 		});
+		
+		getTextInput.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				String getting = textIn.getText().toString();
+				if (getting.contentEquals("left")){
+					
+				} else if (getting.contentEquals("center")) {
+					
+				} else if (getting.contentEquals("right")) {
+					
+				}
+			}
+		});
+		
 		
 	}
 	
