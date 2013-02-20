@@ -37,9 +37,5 @@ public class Menu extends ListActivity {
 			
 		}
 	}
-
-	//TEST PUSH 2013 02 20 
 	
-	
-
 }

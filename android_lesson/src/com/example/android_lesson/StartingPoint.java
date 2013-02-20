@@ -20,21 +20,21 @@ public class StartingPoint extends Activity {
 	counter = 0;
 	add = (Button) findViewById(R.id.buADD);
 	substract = (Button) findViewById(R.id.buSUBSTRACT);
-	result = (TextView) findViewById(R.id.resultDisplay);
+	result = (TextView) findViewById(R.id.resultDisplay2);
 	
 	//use setOnClickListener , onClick
 	add.setOnClickListener(new View.OnClickListener() {
 		public void onClick(View v){
 		//set actions after a CLICK of buADD
 			counter = counter + 1;
-			result.setText("now the total equals "+ counter);
+			result.setText(""+ counter);
 		}
 	});
 	substract.setOnClickListener(new View.OnClickListener() {
 		public void onClick(View v){
 		//set actions after a CLICK of buSUBSTRACT
 			counter = counter - 1;
-			result.setText("now the total equals "+ counter);
+			result.setText(""+ counter);
 		}
 	});
 	
