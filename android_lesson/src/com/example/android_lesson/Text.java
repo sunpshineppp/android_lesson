@@ -14,6 +14,12 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class Text extends Activity {
+	
+	Button getTextInput;
+	ToggleButton switchPassword;
+	EditText textIn;
+	TextView textOut;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +28,9 @@ public class Text extends Activity {
 		
 		setContentView(R.layout.text);
 		
-		Button getTextInput = (Button) findViewById(R.id.buSetTextInput);
-		final ToggleButton switchPassword = (ToggleButton) findViewById(R.id.tbuSwitchPassword);
-		final EditText textIn = (EditText) findViewById(R.id.textInput);
-		final TextView textOut = (TextView) findViewById(R.id.textOutput);
+		textFactory();
+		
+		
 		
 		switchPassword.setOnClickListener(new View.OnClickListener() {
 			
@@ -74,6 +79,17 @@ public class Text extends Activity {
 			}
 		});
 		
+		
+	}
+
+
+	private void textFactory() {
+		// TODO Auto-generated method stub
+		
+		getTextInput = (Button) findViewById(R.id.buSetTextInput);
+		switchPassword = (ToggleButton) findViewById(R.id.tbuSwitchPassword);
+		textIn = (EditText) findViewById(R.id.textInput);
+		textOut = (TextView) findViewById(R.id.textOutput);
 		
 	}
 	
