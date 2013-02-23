@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nameT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Lover`s Name"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/firstDateT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Date You First Meet Each Other"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/firstDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/actionT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Most Romantic Thing You&apos;ll Do For Your Lover"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/actionInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/amountT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How Deep Is Your Love ?"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/amountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/timeT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How Long Will You Keep Loving Your Lover ?"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/timeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+        </LinearLayout>
+    </ScrollView>
+
+    <AnalogClock
+        android:id="@+id/analogClock"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/mailT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Input Your Lover`s e-MAIL"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/mailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="sent you love~"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
