@@ -73,7 +73,7 @@ public class LoveMail extends Activity implements View.OnClickListener {
 				+ '\n'
 				+ "I would to "
 				+ actionString
-				+ "to show you how much I love you. "
+				+ " to show you how much I love you. "
 				+ '\n'
 				+ "If there is a scale to measure my feeling about loving you... "
 				+ "I will say it would be greater than " + amountString + "."
@@ -82,7 +82,7 @@ public class LoveMail extends Activity implements View.OnClickListener {
 
 		Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
 		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, mailAddress);
-		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, "Love Letter");
+		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Love Letter For " + nameString);
 		emailIntent.setType("plain/text");
 		emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, emailContent);
 		startActivity(emailIntent);
