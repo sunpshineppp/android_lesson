@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/RunnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="the Ball is hit !!"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/RunnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RunnerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Runner`s Name"
+        android:inputType="text"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/rbuRunner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RunnerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+
+        <RadioButton
+            android:id="@+id/rbuRunner_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Madness run back to home base  ! "
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbuRunner_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gracefully run through bases ~"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbuRunner_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay where you are."
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buRunnerAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbuRunner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Runner Act"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

@@ -22,9 +22,9 @@ public class CameraToBackground extends Activity implements OnClickListener {
 
 	Intent i;
 	int picResults;
-	
+
 	final static int picData = 0;
-	
+
 	Bitmap bmp;
 
 	@Override
@@ -35,10 +35,11 @@ public class CameraToBackground extends Activity implements OnClickListener {
 		setContentView(R.layout.camera_to_background);
 
 		initialize();
-		
-		InputStream iniPic = getResources().openRawResource(R.drawable.ic_launcher);
+
+		InputStream iniPic = getResources().openRawResource(
+				R.drawable.ic_launcher);
 		bmp = BitmapFactory.decodeStream(iniPic);
-		
+
 	}
 
 	private void initialize() {
@@ -59,23 +60,23 @@ public class CameraToBackground extends Activity implements OnClickListener {
 
 		switch (bu.getId()) {
 
-			case R.id.buOpenCamera:
-				
-				i = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-				startActivityForResult(i, picData);
-	
-				break;
-	
-			case R.id.buSetBackground:
-				
+		case R.id.buOpenCamera:
+
+			i = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+			startActivityForResult(i, picData);
+
+			break;
+
+		case R.id.buSetBackground:
+
 			try {
 				getApplicationContext().setWallpaper(bmp);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	
-				break;
+
+			break;
 		}
 	}
 
@@ -83,20 +84,18 @@ public class CameraToBackground extends Activity implements OnClickListener {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
-		
+
 		if (resultCode == RESULT_OK) {
-			
+
 			Bundle extras = data.getExtras();
-			
+
 			bmp = (Bitmap) extras.get("data");
-			
+
 			pic.setImageBitmap(bmp);
-			
-			};
-		
-		
+
+		}
+		;
+
 	}
-	
-	
 
 }

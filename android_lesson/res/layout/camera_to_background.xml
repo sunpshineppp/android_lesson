@@ -19,8 +19,7 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:src="@drawable/ic_launcher"
-        tools:ignore="ContentDescription" 
-        />
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/buSetBackground"
@@ -28,7 +27,6 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:text="Change Background"
-        tools:ignore="HardcodedText" 
-        />
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>

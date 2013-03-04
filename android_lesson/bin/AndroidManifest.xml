@@ -7,7 +7,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
-    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <application
         android:allowBackup="true"
@@ -51,6 +52,16 @@
         <activity
             android:name=".CameraToBackground"
             android:label="Camera to Background"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HitAndRun"
+            android:label="Hit And Run"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RunAndHit"
+            android:label="Run And Hit"
             android:screenOrientation="portrait" >
         </activity>
     </application>

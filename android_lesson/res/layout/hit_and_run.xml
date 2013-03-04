@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/BatterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="the Ball is coming !!"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/BatterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BatterView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Batter`s Name"
+        android:inputType="text"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/rbuBatter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BatterName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+
+        <RadioButton
+            android:id="@+id/rbuBatter_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hit the god damm ball to outspace  ! "
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbuBatter_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="technically knock it to the outfield ~"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbuBatter_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="carefully sacrifice bunt."
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buBatterAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbuBatter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Batter Act"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
