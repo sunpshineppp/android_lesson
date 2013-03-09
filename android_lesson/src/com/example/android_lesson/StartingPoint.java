@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 public class StartingPoint extends Activity {
 	
+	// test git after a Disaster Conflict problem .... DAMM IT...I lost so many code...
+	
 	int counter;
 	Button add;
 	Button substract;
