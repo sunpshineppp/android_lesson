@@ -64,6 +64,17 @@
             android:label="Run And Hit"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".Test_StartActivity"
+            android:label="Test_StartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Test_StartActivityGet"
+            android:label="Test_StartActivityGet"
+            android:screenOrientation="portrait" >
+        </activity>
+        
     </application>
 
 </manifest>

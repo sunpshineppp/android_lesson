@@ -31,15 +31,20 @@ public final class R {
         public static final int buSUBSTRACT=0x7f080003;
         public static final int buSent=0x7f08001c;
         public static final int buSetBackground=0x7f080006;
-        public static final int buSetTextInput=0x7f080025;
+        public static final int buSetTextInput=0x7f08002a;
+        public static final int describe_1=0x7f080024;
         public static final int email=0x7f08000e;
         public static final int firstDateInput=0x7f080012;
         public static final int firstDateT=0x7f080011;
+        public static final int goBack=0x7f080028;
         public static final int mailInput=0x7f08001b;
         public static final int mailT=0x7f08001a;
-        public static final int menu_settings=0x7f080028;
+        public static final int menu_settings=0x7f08002d;
         public static final int nameInput=0x7f080010;
         public static final int nameT=0x7f08000f;
+        public static final int outPut=0x7f080027;
+        public static final int passInput_1=0x7f080025;
+        public static final int pass_1=0x7f080026;
         public static final int picPreview=0x7f080004;
         public static final int rbuBatter=0x7f080009;
         public static final int rbuBatter_1=0x7f08000a;
@@ -51,9 +56,9 @@ public final class R {
         public static final int rbuRunner_3=0x7f080022;
         public static final int resultDisplay1=0x7f080000;
         public static final int resultDisplay2=0x7f080001;
-        public static final int tbuSwitchPassword=0x7f080026;
-        public static final int textInput=0x7f080024;
-        public static final int textOutput=0x7f080027;
+        public static final int tbuSwitchPassword=0x7f08002b;
+        public static final int textInput=0x7f080029;
+        public static final int textOutput=0x7f08002c;
         public static final int timeInput=0x7f080018;
         public static final int timeT=0x7f080017;
     }
@@ -64,7 +69,9 @@ public final class R {
         public static final int love_mail=0x7f030003;
         public static final int opening=0x7f030004;
         public static final int run_and_hit=0x7f030005;
-        public static final int text=0x7f030006;
+        public static final int test_start_activity=0x7f030006;
+        public static final int test_start_activity_get=0x7f030007;
+        public static final int text=0x7f030008;
     }
     public static final class menu {
         public static final int activity_starting_poing=0x7f070000;
