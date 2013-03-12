@@ -54,6 +54,11 @@
             android:label="Camera to Background"
             android:screenOrientation="portrait" >
         </activity>
+         <activity
+            android:name=".BaseBall"
+            android:label="BaseBall"
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".HitAndRun"
             android:label="Hit And Run"
@@ -84,6 +89,7 @@
             android:label="Test_StartActivityForResult_Get"
             android:screenOrientation="portrait" >
         </activity>
+        
         
         
         

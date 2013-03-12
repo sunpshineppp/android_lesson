@@ -1,7 +1,6 @@
 package com.example.android_lesson;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,10 +13,6 @@ import android.widget.TextView;
 public class HitAndRun extends Activity implements OnClickListener,
 		OnCheckedChangeListener {
 
-	// get game started or not
-
-	String gameStart;
-
 	// set batter`s view variables
 	TextView batterOpen;
 	EditText batterNameInput;
@@ -29,20 +24,12 @@ public class HitAndRun extends Activity implements OnClickListener,
 	String bName;
 	String bAct;
 
-	// set runner`s view variables
-	TextView runnerOpen;
-	EditText runnerNameInput;
-	RadioGroup runnerChoices;
-	Button runnerActing;
-
 	// set runner`s passing variables
 	String setRunnerAct;
 	String rName;
 	String rAct;
+	
 
-	// set string array for pass bundle
-	String[] gameStatus_b = { gameStart, setBatterAct, bName, bAct,
-			setRunnerAct, rName, rAct };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,40 +39,26 @@ public class HitAndRun extends Activity implements OnClickListener,
 		setContentView(R.layout.hit_and_run);
 
 		initialize();
+		
+		// open the bundle, get string, set text view
+		Bundle watchBases = getIntent().getExtras();
+		setRunnerAct = watchBases.getString("RunnerAct"); 
+		batterOpen.setText(setRunnerAct);
 
 	}
 
 	private void initialize() {
 		// TODO Auto-generated method stub
-
+		
+		// variables & views
 		batterOpen = (TextView) findViewById(R.id.BatterView);
 		batterNameInput = (EditText) findViewById(R.id.BatterName);
 		batterChoices = (RadioGroup) findViewById(R.id.rbuBatter);
 		batterActing = (Button) findViewById(R.id.buBatterAct);
+
+		// button & listener
 		batterActing.setOnClickListener(this);
 		batterChoices.setOnCheckedChangeListener(this);
-
-		if (gameStart == null) {
-			// if game first time start, set open
-			batterOpen.setText("the Ball is coming !!");
-		} else {
-
-			// set a bundle to get a bundle
-			Bundle getGameStatus = this.getIntent().getExtras();
-			String[] status = getGameStatus.getStringArray("status_r");
-
-			// merge 2 bundles
-			int count = status.length;
-			for (int i = 0; i < count; i++) {
-				gameStatus_b[i] = status[i];
-			}
-
-			// if game already started, use string array to get bundle from
-			// the other activity.
-			batterOpen.setText(rAct);
-
-		}
-
 	}
 
 	@Override
@@ -95,22 +68,6 @@ public class HitAndRun extends Activity implements OnClickListener,
 		switch (arg0.getId()) {
 
 		case R.id.buBatterAct:
-
-			// get data by listeners
-			gameStatus_b[0] = "playball !";
-
-			bName = batterNameInput.getText().toString();
-
-			bAct = bName + " " + setBatterAct;
-
-			// put data into bundle
-			Bundle bundle = new Bundle();
-
-			bundle.putStringArray("status_b", gameStatus_b);
-
-			Intent intent = new Intent(HitAndRun.this, RunAndHit.class);
-			intent.putExtras(bundle);
-			startActivity(intent);
 
 			break;
 
