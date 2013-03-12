@@ -74,6 +74,20 @@
             android:label="Test_StartActivityGet"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".Test_StartActivityForResult"
+            android:label="Test_StartActivityForResult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Test_StartActivityForResult_Get"
+            android:label="Test_StartActivityForResult_Get"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        
+        
+        
         
     </application>
 

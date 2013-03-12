@@ -10,7 +10,7 @@ import android.widget.ListView;
 public class Menu extends ListActivity {
 	
 	String classes[] = {"StartingPoint" , "Text" , "LoveMail" , "CameraToBackground"
-			, "HitAndRun" , "RunAndHit" , "Test_StartActivity" };
+			, "HitAndRun" , "RunAndHit" , "Test_StartActivity" , "Test_StartActivityForResult" };
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
