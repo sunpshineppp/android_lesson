@@ -1,6 +1,7 @@
 package com.example.android_lesson;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -66,6 +67,19 @@ public class RunAndHit extends Activity implements OnClickListener,
 		switch (arg0.getId()) {
 
 		case R.id.buRunnerAct:
+			
+			
+			
+			// set a bundle to carry this string
+			// putString("key for access",data need to be pass)
+			Bundle status_r = new Bundle();
+			status_r.putString("RunnerAct", setRunnerAct);
+			status_r.putString("BatterAct", setBatterAct);
+			
+			Intent go_hit = new Intent(RunAndHit.this, HitAndRun.class);
+			go_hit.putExtras(status_r);
+			
+			startActivity(go_hit);
 		
 			break;
 
