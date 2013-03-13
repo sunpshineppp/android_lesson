@@ -43,6 +43,11 @@ public class RunAndHit extends Activity implements OnClickListener,
 		Bundle getPitch = getIntent().getExtras();
 		setBatterAct = getPitch.getString("BatterAct"); 
 		runnerOpen.setText(setBatterAct);
+		
+		bName = getPitch.getString("BatterName");
+		rName = getPitch.getString("RunnerName");
+		
+		runnerNameInput.setHint(rName);
 
 	}
 
@@ -68,13 +73,15 @@ public class RunAndHit extends Activity implements OnClickListener,
 
 		case R.id.buRunnerAct:
 			
-			
+			rName = runnerNameInput.getText().toString();
 			
 			// set a bundle to carry this string
 			// putString("key for access",data need to be pass)
 			Bundle status_r = new Bundle();
 			status_r.putString("RunnerAct", setRunnerAct);
 			status_r.putString("BatterAct", setBatterAct);
+			status_r.putString("RunnerName", rName);
+			status_r.putString("BatterName", bName);
 			
 			Intent go_hit = new Intent(RunAndHit.this, HitAndRun.class);
 			go_hit.putExtras(status_r);
@@ -95,17 +102,17 @@ public class RunAndHit extends Activity implements OnClickListener,
 
 		case R.id.rbuRunner_1:
 
-			setRunnerAct = " is running back to home base madly !";
+			setRunnerAct = rName + " is running back to home base madly !";
 
 			break;
 		case R.id.rbuRunner_2:
 
-			setRunnerAct = " is run through bases gracefully ~";
+			setRunnerAct = rName + " is run through bases gracefully ~";
 
 			break;
 		case R.id.rbuRunner_3:
 
-			setRunnerAct = " is staying holded.";
+			setRunnerAct = rName + " is staying holded.";
 
 			break;
 

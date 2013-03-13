@@ -45,6 +45,11 @@ public class HitAndRun extends Activity implements OnClickListener,
 		Bundle watchBases = getIntent().getExtras();
 		setRunnerAct = watchBases.getString("RunnerAct"); 
 		batterOpen.setText(setRunnerAct);
+		
+		bName = watchBases.getString("BatterName");
+		rName = watchBases.getString("RunnerName");
+		
+		batterNameInput.setHint(bName);
 
 	}
 
@@ -70,13 +75,15 @@ public class HitAndRun extends Activity implements OnClickListener,
 
 		case R.id.buBatterAct:
 			
-			
+			bName = batterNameInput.getText().toString();
 			
 			// set a bundle to carry this string
 			// putString("key for access",data need to be pass)
 			Bundle status_b = new Bundle();
 			status_b.putString("BatterAct", setBatterAct);
 			status_b.putString("RunnerAct", setRunnerAct);
+			status_b.putString("RunnerName", rName);
+			status_b.putString("BatterName", bName);
 
 			
 			Intent go_run = new Intent(HitAndRun.this, RunAndHit.class);
@@ -99,17 +106,17 @@ public class HitAndRun extends Activity implements OnClickListener,
 
 		case R.id.rbuBatter_1:
 
-			setBatterAct = " hit the god damm ball to outspace  !";
+			setBatterAct = bName + " hit the god damm ball to outspace  !";
 
 			break;
 		case R.id.rbuBatter_2:
 
-			setBatterAct = " technically knock it to the outfield ~";
+			setBatterAct = bName + " technically knock it to the outfield ~";
 
 			break;
 		case R.id.rbuBatter_3:
 
-			setBatterAct = " carefully sacrifice bunt.";
+			setBatterAct = bName + " carefully sacrifice bunt.";
 
 			break;
 
