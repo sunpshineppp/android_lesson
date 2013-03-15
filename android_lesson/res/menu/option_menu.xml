@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    
+    <item
+        android:title="AboutApp"
+        android:id="@+id/aboutApp"
+        tools:ignore="HardcodedText"
+        />
+    
+    <item
+        android:title="AboutUser"
+        android:id="@+id/aboutUser"
+        tools:ignore="HardcodedText"
+        />
+    
+    <item
+        android:title="Preferences"
+        android:id="@+id/preferences"
+        tools:ignore="HardcodedText"
+        />
+    
+    <item
+        android:title="Exit"
+        android:id="@+id/exit"
+        tools:ignore="HardcodedText"
+        />
+    
+
+</menu>

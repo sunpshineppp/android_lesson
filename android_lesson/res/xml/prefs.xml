@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:title="User Name"
+        android:key="userName"
+        android:summary="Enter Your Name"
+        />
+    
+    <CheckBoxPreference
+        android:title="OpeningMusic"
+        android:defaultValue="true"
+        android:key="musicSwitch"
+        android:summary="Music:On/Off"
+        />
+    
+    <ListPreference
+        android:title="List"
+        android:key="list"
+        android:summary=""
+        android:entries="@array/list"
+        android:entryValues="@array/lValues"
+        />
+
+</PreferenceScreen>
