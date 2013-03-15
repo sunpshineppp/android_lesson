@@ -2,8 +2,8 @@
 <resources>
 
     <string-array name="list">
-        <item> Option1 </item>
-        <item> Option2 </item>
+        <item> count in USD </item>
+        <item> count in NTD </item>
     </string-array>
 
     <string-array name="lValues">
