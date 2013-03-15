@@ -21,22 +21,22 @@
 
         <Button
             android:id="@+id/HitBallFirst"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="50"
             android:gravity="center"
-            android:text="Hit Ball First"
+            android:background="@drawable/baseball_hit_first"
             tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/RunBaseFirst"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="50"
             android:gravity="center"
-            android:text="Run Base First"
+            android:background="@drawable/baseball_run_first"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
