@@ -54,7 +54,7 @@
             android:label="Camera to Background"
             android:screenOrientation="portrait" >
         </activity>
-         <activity
+        <activity
             android:name=".BaseBall"
             android:label="BaseBall"
             android:screenOrientation="portrait" >
@@ -89,12 +89,31 @@
             android:label="Test_StartActivityForResult_Get"
             android:screenOrientation="portrait" >
         </activity>
-        
-        
-        
-        
-        
-        
+        <activity
+            android:name=".AboutApp"
+            android:label="AboutApp"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.example.android_lesson.ABOUTAPP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUser"
+            android:label="AboutUser"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="Preferences" >
+            <intent-filter>
+                <action android:name="com.example.android_lesson.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

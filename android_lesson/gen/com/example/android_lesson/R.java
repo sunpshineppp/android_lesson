@@ -8,6 +8,10 @@
 package com.example.android_lesson;
 
 public final class R {
+    public static final class array {
+        public static final int lValues=0x7f060001;
+        public static final int list=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class drawable {
@@ -15,88 +19,93 @@ public final class R {
         public static final int opening_background=0x7f020001;
     }
     public static final class id {
-        public static final int BatterName=0x7f08000b;
-        public static final int BatterView=0x7f08000a;
-        public static final int HitBallFirst=0x7f080005;
-        public static final int RunBaseFirst=0x7f080006;
-        public static final int RunnerName=0x7f080021;
-        public static final int RunnerView=0x7f080020;
-        public static final int actionInput=0x7f080017;
-        public static final int actionT=0x7f080016;
-        public static final int amountInput=0x7f080019;
-        public static final int amountT=0x7f080018;
-        public static final int analogClock=0x7f08001c;
-        public static final int buADD=0x7f080002;
-        public static final int buBatterAct=0x7f080010;
-        public static final int buOpenCamera=0x7f080008;
-        public static final int buRunnerAct=0x7f080026;
-        public static final int buSUBSTRACT=0x7f080003;
-        public static final int buSent=0x7f08001f;
-        public static final int buSetBackground=0x7f080009;
-        public static final int buSetTextInput=0x7f080035;
-        public static final int describe_1=0x7f080027;
-        public static final int email=0x7f080011;
-        public static final int enterFeedback=0x7f08002f;
-        public static final int feedbackMessage=0x7f08002d;
-        public static final int feedbackSend=0x7f080031;
-        public static final int firstDateInput=0x7f080015;
-        public static final int firstDateT=0x7f080014;
-        public static final int game=0x7f080004;
-        public static final int goBack=0x7f080033;
-        public static final int mailInput=0x7f08001e;
-        public static final int mailT=0x7f08001d;
-        public static final int menu_settings=0x7f080038;
-        public static final int messageFeedbackInput=0x7f080030;
-        public static final int messageIn=0x7f08002c;
-        public static final int messageInput=0x7f08002b;
-        public static final int messageView=0x7f08002e;
-        public static final int nameInput=0x7f080013;
-        public static final int nameT=0x7f080012;
-        public static final int outPut=0x7f080032;
-        public static final int passInput_1=0x7f080028;
-        public static final int pass_1=0x7f080029;
-        public static final int picPreview=0x7f080007;
-        public static final int rbuBatter=0x7f08000c;
-        public static final int rbuBatter_1=0x7f08000d;
-        public static final int rbuBatter_2=0x7f08000e;
-        public static final int rbuBatter_3=0x7f08000f;
-        public static final int rbuRunner=0x7f080022;
-        public static final int rbuRunner_1=0x7f080023;
-        public static final int rbuRunner_2=0x7f080024;
-        public static final int rbuRunner_3=0x7f080025;
-        public static final int resultDisplay1=0x7f080000;
-        public static final int resultDisplay2=0x7f080001;
-        public static final int status=0x7f08002a;
-        public static final int tbuSwitchPassword=0x7f080036;
-        public static final int textInput=0x7f080034;
-        public static final int textOutput=0x7f080037;
-        public static final int timeInput=0x7f08001b;
-        public static final int timeT=0x7f08001a;
+        public static final int BatterName=0x7f0a000c;
+        public static final int BatterView=0x7f0a000b;
+        public static final int HitBallFirst=0x7f0a0006;
+        public static final int RunBaseFirst=0x7f0a0007;
+        public static final int RunnerName=0x7f0a0022;
+        public static final int RunnerView=0x7f0a0021;
+        public static final int aboutApp=0x7f0a0039;
+        public static final int aboutUser=0x7f0a003a;
+        public static final int actionInput=0x7f0a0018;
+        public static final int actionT=0x7f0a0017;
+        public static final int amountInput=0x7f0a001a;
+        public static final int amountT=0x7f0a0019;
+        public static final int analogClock=0x7f0a001d;
+        public static final int buADD=0x7f0a0003;
+        public static final int buBatterAct=0x7f0a0011;
+        public static final int buOpenCamera=0x7f0a0009;
+        public static final int buRunnerAct=0x7f0a0027;
+        public static final int buSUBSTRACT=0x7f0a0004;
+        public static final int buSent=0x7f0a0020;
+        public static final int buSetBackground=0x7f0a000a;
+        public static final int buSetTextInput=0x7f0a0036;
+        public static final int describe_1=0x7f0a0028;
+        public static final int email=0x7f0a0012;
+        public static final int enterFeedback=0x7f0a0030;
+        public static final int exit=0x7f0a003c;
+        public static final int feedbackMessage=0x7f0a002e;
+        public static final int feedbackSend=0x7f0a0032;
+        public static final int firstDateInput=0x7f0a0016;
+        public static final int firstDateT=0x7f0a0015;
+        public static final int game=0x7f0a0005;
+        public static final int goBack=0x7f0a0034;
+        public static final int mailInput=0x7f0a001f;
+        public static final int mailT=0x7f0a001e;
+        public static final int messageFeedbackInput=0x7f0a0031;
+        public static final int messageIn=0x7f0a002d;
+        public static final int messageInput=0x7f0a002c;
+        public static final int messageView=0x7f0a002f;
+        public static final int nameInput=0x7f0a0014;
+        public static final int nameT=0x7f0a0013;
+        public static final int outPut=0x7f0a0033;
+        public static final int passInput_1=0x7f0a0029;
+        public static final int pass_1=0x7f0a002a;
+        public static final int picPreview=0x7f0a0008;
+        public static final int preferences=0x7f0a003b;
+        public static final int rbuBatter=0x7f0a000d;
+        public static final int rbuBatter_1=0x7f0a000e;
+        public static final int rbuBatter_2=0x7f0a000f;
+        public static final int rbuBatter_3=0x7f0a0010;
+        public static final int rbuRunner=0x7f0a0023;
+        public static final int rbuRunner_1=0x7f0a0024;
+        public static final int rbuRunner_2=0x7f0a0025;
+        public static final int rbuRunner_3=0x7f0a0026;
+        public static final int resultDisplay1=0x7f0a0001;
+        public static final int resultDisplay2=0x7f0a0002;
+        public static final int status=0x7f0a002b;
+        public static final int tbuSwitchPassword=0x7f0a0037;
+        public static final int textInput=0x7f0a0035;
+        public static final int textOutput=0x7f0a0038;
+        public static final int text_about_app=0x7f0a0000;
+        public static final int timeInput=0x7f0a001c;
+        public static final int timeT=0x7f0a001b;
     }
     public static final class layout {
-        public static final int activity_starting_poing=0x7f030000;
-        public static final int base_ball=0x7f030001;
-        public static final int camera_to_background=0x7f030002;
-        public static final int hit_and_run=0x7f030003;
-        public static final int love_mail=0x7f030004;
-        public static final int opening=0x7f030005;
-        public static final int run_and_hit=0x7f030006;
-        public static final int test_start_activity=0x7f030007;
-        public static final int test_start_activity_for_result=0x7f030008;
-        public static final int test_start_activity_for_result_get=0x7f030009;
-        public static final int test_start_activity_get=0x7f03000a;
-        public static final int text=0x7f03000b;
+        public static final int about_app=0x7f030000;
+        public static final int activity_starting_point=0x7f030001;
+        public static final int base_ball=0x7f030002;
+        public static final int camera_to_background=0x7f030003;
+        public static final int hit_and_run=0x7f030004;
+        public static final int love_mail=0x7f030005;
+        public static final int opening=0x7f030006;
+        public static final int run_and_hit=0x7f030007;
+        public static final int test_start_activity=0x7f030008;
+        public static final int test_start_activity_for_result=0x7f030009;
+        public static final int test_start_activity_for_result_get=0x7f03000a;
+        public static final int test_start_activity_get=0x7f03000b;
+        public static final int text=0x7f03000c;
     }
     public static final class menu {
-        public static final int activity_starting_poing=0x7f070000;
+        public static final int option_menu=0x7f090000;
     }
     public static final class raw {
-        public static final int time_after_time=0x7f040000;
+        public static final int time_after_time=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
-        public static final int menu_settings=0x7f050002;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070001;
+        public static final int menu_settings=0x7f070002;
     }
     public static final class style {
         /** 
@@ -120,10 +129,13 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f080001;
+    }
+    public static final class xml {
+        public static final int prefs=0x7f040000;
     }
 }

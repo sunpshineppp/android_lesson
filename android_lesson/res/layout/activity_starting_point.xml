@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".StartingPoint" >
+
+    <TextView
+        android:id="@+id/resultDisplay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="your total is..."
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+    
+    <TextView
+        android:id="@+id/resultDisplay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textSize="150dp"
+        tools:ignore="HardcodedText,SpUsage" />
+    
+    <Button
+        android:id="@+id/buADD"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="ADD ONE"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage" />
+    
+    <Button
+        android:id="@+id/buSUBSTRACT"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="SUBTRACT ONE"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage" />
+    
+</LinearLayout>
