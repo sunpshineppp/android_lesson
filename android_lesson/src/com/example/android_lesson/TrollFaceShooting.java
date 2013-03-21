@@ -78,6 +78,14 @@ public class TrollFaceShooting extends Activity implements OnTouchListener {
 	@Override
 	public boolean onTouch(View arg0, MotionEvent event) {
 		// TODO Auto-generated method stub
+		
+		// set lower rate to save phone RAM
+		try {
+			Thread.sleep(50);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		// use listener to get position
 		x = event.getX();
