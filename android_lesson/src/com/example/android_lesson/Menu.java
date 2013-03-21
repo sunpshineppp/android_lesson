@@ -16,7 +16,7 @@ public class Menu extends ListActivity {
 	String classes[] = { "StartingPoint", "Text", "LoveMail",
 			"CameraToBackground", "Test_StartActivity",
 			"Test_StartActivityForResult", "BaseBall",
-			"BallBall" };
+			"BallBall", "TrollFaceShooting" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class Menu extends ListActivity {
 		String selected = classes[position];
 
 		try {
+			@SuppressWarnings("rawtypes")
 			Class c = Class.forName("com.example.android_lesson." + selected);
 			Intent i = new Intent(Menu.this, c);
 			startActivity(i);

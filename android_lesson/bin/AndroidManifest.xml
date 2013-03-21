@@ -118,6 +118,16 @@
             android:label="BallBall"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".TrollFaceShooting"
+            android:label="TrollFaceShooting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TrollfaceMaker"
+            android:label="TrollfaceMaker"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>
