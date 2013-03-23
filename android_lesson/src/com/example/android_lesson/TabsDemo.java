@@ -90,7 +90,7 @@ public class TabsDemo extends Activity implements OnClickListener {
 				// (int) is make code let "long" save in "int"
 				int timePeriod = (int)result;
 				int seconds = timePeriod/1000;
-				int minutes = seconds/1000;
+				int minutes = seconds/60;
 				
 				// Long.toString is a way to transfer long to string
 				//textView1.setText(Long.toString(result));

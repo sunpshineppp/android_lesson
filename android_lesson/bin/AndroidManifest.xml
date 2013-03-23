@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -142,6 +143,11 @@
         <activity
             android:name=".TabsDemo"
             android:label="TabsDemo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SimpleIE"
+            android:label="SimpleIE"
             android:screenOrientation="portrait" >
         </activity>
     </application>
