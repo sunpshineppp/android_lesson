@@ -129,6 +129,11 @@
             android:label="TrollfaceMaker"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".CatNoise"
+            android:label="CatNoise"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>
