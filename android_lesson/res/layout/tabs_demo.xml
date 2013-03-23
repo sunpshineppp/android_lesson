@@ -40,13 +40,13 @@
                         android:id="@+id/button1a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Button1a" />
+                        android:text="Start Time" />
 
                     <Button
                         android:id="@+id/button1b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Button1b" />
+                        android:text="Stop Time" />
 
                 </LinearLayout>
 

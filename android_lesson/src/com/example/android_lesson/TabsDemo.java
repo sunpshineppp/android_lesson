@@ -12,6 +12,12 @@ import android.widget.TextView;
 public class TabsDemo extends Activity implements OnClickListener {
 
 	TabHost tabs;
+	
+	// for tab1, clock
+	TextView textView1;
+	Button button1a;
+	Button button1b;
+	long startTime=0, stopTime=0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +27,9 @@ public class TabsDemo extends Activity implements OnClickListener {
 		setContentView(R.layout.tabs_demo);
 
 		// set view
-		TextView textView1 = (TextView) findViewById(R.id.textView1);
-		Button button1a = (Button) findViewById(R.id.button1a);
-		Button button1b = (Button) findViewById(R.id.button1b);
+		textView1 = (TextView) findViewById(R.id.textView1);
+		button1a = (Button) findViewById(R.id.button1a);
+		button1b = (Button) findViewById(R.id.button1b);
 
 		TextView textView2 = (TextView) findViewById(R.id.textView2);
 		Button button2a = (Button) findViewById(R.id.button2a);
@@ -72,10 +78,28 @@ public class TabsDemo extends Activity implements OnClickListener {
 		switch (v.getId()) {
 
 		case R.id.button1a:
+			startTime = System.currentTimeMillis();
 
 			break;
 
 		case R.id.button1b:
+			stopTime = System.currentTimeMillis();
+			
+			if (startTime !=0 && stopTime !=0){
+				long result = stopTime - startTime;
+				// (int) is make code let "long" save in "int"
+				int timePeriod = (int)result;
+				int seconds = timePeriod/1000;
+				int minutes = seconds/1000;
+				
+				// Long.toString is a way to transfer long to string
+				//textView1.setText(Long.toString(result));
+				
+				// there are 3 d, each one is direct to the following arguments
+				// seconds % 60 => if seconds is 70, then seconds % 60 == 10 , output the remainder
+				textView1.setText(String.format("%d:%02d:%02d",minutes, seconds%60, timePeriod%100));
+				
+			}
 
 			break;
 		case R.id.button2a:
