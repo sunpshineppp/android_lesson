@@ -134,6 +134,11 @@
             android:label="CatNoise"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".SlidingPanel"
+            android:label="SlidingPanel"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>

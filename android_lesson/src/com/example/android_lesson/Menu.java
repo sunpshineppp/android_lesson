@@ -16,7 +16,8 @@ public class Menu extends ListActivity {
 	String classes[] = { "StartingPoint", "Text", "LoveMail",
 			"CameraToBackground", "Test_StartActivity",
 			"Test_StartActivityForResult", "BaseBall",
-			"BallBall", "TrollFaceShooting", "CatNoise" };
+			"BallBall", "TrollFaceShooting", "CatNoise",
+			"SlidingPanel" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/slideOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slideOpen"
+        tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/slideClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slideClose"
+        tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toggle"
+        tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/handleLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LockUp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/handleUnlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlock"
+        tools:ignore="HardcodedText" />
+    
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handle"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/SlideView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey, I am Sliding~"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/checkSlidable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slidable"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </SlidingDrawer>
+    
+   </FrameLayout>
+
