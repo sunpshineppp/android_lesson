@@ -139,6 +139,11 @@
             android:label="SlidingPanel"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".TabsDemo"
+            android:label="TabsDemo"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>
