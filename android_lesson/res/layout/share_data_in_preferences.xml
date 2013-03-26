@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type in your little Secret, and save it."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/secretsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="type in your Secret here."
+        android:inputType="textMultiLine"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buSaveSecret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save Secret"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buLoadSecret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load Secret"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/secretOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

@@ -155,6 +155,12 @@
             android:label="Flipper Demo"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".ShareDataInPreferences"
+            android:label="Share Data In Preferences"
+            android:screenOrientation="portrait" >
+        </activity>
+        
     </application>
 
 </manifest>
