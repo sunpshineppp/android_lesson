@@ -160,6 +160,16 @@
             android:label="Share Data In Preferences"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".InternalData"
+            android:label="Internal Data"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ExternalData"
+            android:label="External Data"
+            android:screenOrientation="portrait" >
+        </activity>
         
     </application>
 

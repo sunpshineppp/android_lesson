@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type in data, and save it."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/dataInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="type in data."
+        android:inputType="textMultiLine"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buSaveDataByFileMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save data By File Method"
+        tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/buSaveDataByWriteMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save data By Write Method"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buLoadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load data"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dataOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
