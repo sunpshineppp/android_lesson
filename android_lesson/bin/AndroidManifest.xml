@@ -92,7 +92,7 @@
         </activity>
         <activity
             android:name=".AboutApp"
-            android:label="AboutApp"
+            android:label="About App"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
@@ -103,7 +103,7 @@
         </activity>
         <activity
             android:name=".AboutUser"
-            android:label="AboutUser"
+            android:label="About User"
             android:screenOrientation="portrait" >
         </activity>
         <activity
@@ -117,37 +117,42 @@
         </activity>
         <activity
             android:name=".BallBall"
-            android:label="BallBall"
+            android:label="Ball Ball"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".TrollFaceShooting"
-            android:label="TrollFaceShooting"
+            android:label="Troll Face Shooting"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".TrollfaceMaker"
-            android:label="TrollfaceMaker"
+            android:label="Troll face Maker"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".CatNoise"
-            android:label="CatNoise"
+            android:label="Cat Noise"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".SlidingPanel"
-            android:label="SlidingPanel"
+            android:label="Sliding Panel"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".TabsDemo"
-            android:label="TabsDemo"
+            android:label="Tabs Demo"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".SimpleIE"
-            android:label="SimpleIE"
+            android:label="Simple IE"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FlipperDemo"
+            android:label="Flipper Demo"
             android:screenOrientation="portrait" >
         </activity>
     </application>

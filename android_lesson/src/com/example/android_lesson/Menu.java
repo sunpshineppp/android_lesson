@@ -17,7 +17,7 @@ public class Menu extends ListActivity {
 			"CameraToBackground", "Test_StartActivity",
 			"Test_StartActivityForResult", "BaseBall",
 			"BallBall", "TrollFaceShooting", "CatNoise",
-			"SlidingPanel", "TabsDemo", "SimpleIE" };
+			"SlidingPanel", "TabsDemo", "SimpleIE", "FlipperDemo" };
 
 	//
 	@Override
