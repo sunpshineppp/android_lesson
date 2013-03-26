@@ -3,11 +3,13 @@ package com.example.android_lesson;
 import java.util.Random;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -95,6 +97,10 @@ public class Text extends Activity implements View.OnClickListener {
 				textOut.setTextColor(Color.RED);
 			}
 
+			// hide keyboard after on click
+			InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+			imm.hideSoftInputFromWindow(textIn.getWindowToken(), 0);
+			
 			break;
 		}
 	}

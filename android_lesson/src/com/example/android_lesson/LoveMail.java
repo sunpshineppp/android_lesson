@@ -1,9 +1,11 @@
 package com.example.android_lesson;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -100,6 +102,15 @@ public class LoveMail extends Activity implements View.OnClickListener {
 
 		mailString = mail.getText().toString();
 
+		// hide keyboard after on click
+		InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+		imm.hideSoftInputFromWindow(name.getWindowToken(), 0);
+		imm.hideSoftInputFromWindow(firstDate.getWindowToken(), 0);
+		imm.hideSoftInputFromWindow(action.getWindowToken(), 0);
+		imm.hideSoftInputFromWindow(amount.getWindowToken(), 0);
+		imm.hideSoftInputFromWindow(time.getWindowToken(), 0);
+		imm.hideSoftInputFromWindow(mail.getWindowToken(), 0);
+		
 	}
 
 }
