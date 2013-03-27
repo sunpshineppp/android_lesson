@@ -41,6 +41,16 @@
         android:layout_height="wrap_content"
         android:text="load data"
         tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/buLoadDataByAsyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load data By Async Task"
+        tools:ignore="HardcodedText" />
+    
+    
+    
 
     <TextView
         android:id="@+id/dataOutput"
