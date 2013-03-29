@@ -8,6 +8,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import android.app.Activity;
+import android.media.MediaScannerConnection;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -113,6 +115,14 @@ public class ExternalData extends Activity implements OnClickListener,
 		case R.id.buSave:
 
 			String fileNameData = fileNameInput.getText().toString();
+			
+			// try to fix .png problem
+			int searchLoc_1 = fileNameData.indexOf(".PNG");
+			int searchLoc_2 = fileNameData.indexOf(".png");
+			// both can not be found, so we add it.
+			if(searchLoc_1 == -1 && searchLoc_2 == -1)
+				fileNameData = fileNameData + ".png";
+			
 			// public File (File dir, String name)
 			file = new File(pathName, fileNameData);
 
@@ -143,6 +153,25 @@ public class ExternalData extends Activity implements OnClickListener,
 					// use toast to show the saving is COMPELETE
 					Toast savingReport = Toast.makeText(ExternalData.this, "File has been saved ", Toast.LENGTH_LONG);
 					savingReport.show();
+					
+					// Update files for the user to use
+					// we trigger mediaScanner to update right after the file is saved.
+					// otherwise it might take a while for user to see the saving file in folder.
+					MediaScannerConnection.scanFile(ExternalData.this,
+							new String[] {file.toString()}, 
+							null, 
+							new MediaScannerConnection.OnScanCompletedListener(){
+
+								@Override
+								public void onScanCompleted(String arg0,
+										Uri arg1) {
+									// TODO Auto-generated method stub
+									Toast MediaUpdateReport = Toast.makeText(ExternalData.this,
+											"MediaUpdate is OK",
+											Toast.LENGTH_SHORT);
+								}
+						
+					});
 					
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
