@@ -18,7 +18,8 @@ public class Menu extends ListActivity {
 			"Test_StartActivityForResult", "BaseBall",
 			"BallBall", "TrollFaceShooting", "CatNoise",
 			"SlidingPanel", "TabsDemo", "SimpleIE", "FlipperDemo",
-			"ShareDataInPreferences", "InternalData", "ExternalData" };
+			"ShareDataInPreferences", "InternalData", "ExternalData",
+			"SQLiteDemo"};
 
 	//
 	@Override

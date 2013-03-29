@@ -171,6 +171,26 @@
             android:label="External Data"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".SQLiteDemo"
+            android:label="SQLite Demo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SQLiteView"
+            android:label="SQLite View"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.android_lesson.SQLiteView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SQLiteGirlDB"
+            android:label="SQLite Girl DB"
+            android:screenOrientation="portrait" >
+        </activity>
         
     </application>
 
