@@ -94,7 +94,7 @@ public class SQLiteGirlDB {
 		
 	}
 
-	public String getData() {
+	public String getData() throws SQLException{
 		// TODO Auto-generated method stub
 		String[] dataColumns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS, KEY_DESCRIPTION };
 		Cursor callData = GirlSQL.query(DATABASE_TABLE, dataColumns,null,null,null,null, null);
@@ -123,7 +123,7 @@ public class SQLiteGirlDB {
 		return callDataResult;
 	}
 
-	public String getName(long idNumber) {
+	public String getName(long idNumber) throws SQLException{
 		// TODO Auto-generated method stub
 		String[] dataColumns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS, KEY_DESCRIPTION };
 		Cursor callData = GirlSQL.query(DATABASE_TABLE, dataColumns, KEY_ROWID + "=" + idNumber, null,null,null, null);
@@ -137,7 +137,7 @@ public class SQLiteGirlDB {
 		return null;
 	}
 
-	public String getHotness(long idNumber) {
+	public String getHotness(long idNumber) throws SQLException{
 		// TODO Auto-generated method stub
 		String[] dataColumns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS, KEY_DESCRIPTION };
 		Cursor callData = GirlSQL.query(DATABASE_TABLE, dataColumns, KEY_ROWID + "=" + idNumber, null,null,null, null);
@@ -151,7 +151,7 @@ public class SQLiteGirlDB {
 		return null;
 	}
 
-	public String getDescription(long idNumber) {
+	public String getDescription(long idNumber) throws SQLException{
 		// TODO Auto-generated method stub
 		String[] dataColumns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS, KEY_DESCRIPTION };
 		Cursor callData = GirlSQL.query(DATABASE_TABLE, dataColumns, KEY_ROWID + "=" + idNumber, null,null,null, null);
@@ -163,6 +163,20 @@ public class SQLiteGirlDB {
 			return description;
 		}		
 		return null;
+	}
+
+	public void updateEntry(long idNumber_modified, String nameData_modified,
+			String descriptionData_modified) throws SQLException{
+		// TODO Auto-generated method stub
+		ContentValues dataUpdate = new ContentValues();
+		dataUpdate.put(KEY_NAME, nameData_modified );
+		dataUpdate.put(KEY_HOTNESS, descriptionData_modified );
+		GirlSQL.update(DATABASE_TABLE, dataUpdate, KEY_ROWID + "=" + idNumber_modified, null);
+	}
+
+	public void deleteEntry(long idNumber_delete) throws SQLException{
+		// TODO Auto-generated method stub
+		GirlSQL.delete(DATABASE_TABLE, KEY_ROWID + "=" + idNumber_delete, null);
 	}
 	
 
