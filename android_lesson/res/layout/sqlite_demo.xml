@@ -51,4 +51,43 @@
         android:layout_height="wrap_content"
         android:text="View" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter row ID to query data" />
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+	    <EditText
+	        android:id="@+id/rowIDquery"
+	        android:layout_weight="2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="numberPassword" />
+	
+	    <Button
+	        android:id="@+id/buRowIDquery"
+	        android:layout_weight="8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="query" />
+    
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/editEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT Entry" />
+
+    <Button
+        android:id="@+id/deleteEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE Entry" />
+
 </LinearLayout>

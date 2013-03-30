@@ -17,6 +17,9 @@ public class SQLiteDemo extends Activity implements OnClickListener{
 	Spinner girlHotnessScale;
 	Button buSaveDB, buLoadDB;
 	
+	EditText rowIDquery;
+	Button buRowIDquery, editEntry, deleteEntry;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -38,6 +41,17 @@ public class SQLiteDemo extends Activity implements OnClickListener{
 		buLoadDB = (Button) findViewById(R.id.buLoadDB);
 		buSaveDB.setOnClickListener(this);
 		buLoadDB.setOnClickListener(this);
+		
+		
+		rowIDquery = (EditText) findViewById(R.id.rowIDquery);
+		buRowIDquery = (Button) findViewById(R.id.buRowIDquery);
+		editEntry = (Button) findViewById(R.id.editEntry);
+		deleteEntry = (Button) findViewById(R.id.deleteEntry);
+		buRowIDquery.setOnClickListener(this);
+		editEntry.setOnClickListener(this);
+		deleteEntry.setOnClickListener(this);
+		
+		
 	}
 
 
@@ -88,7 +102,31 @@ public class SQLiteDemo extends Activity implements OnClickListener{
 			startActivity(load);
 			break;
 		
-		
+		case R.id.buRowIDquery :
+			
+			String id = rowIDquery.getText().toString();
+			long idNumber = Long.parseLong(id);
+			SQLiteGirlDB getDB = new SQLiteGirlDB(this);
+			getDB.open();
+			String returnName = getDB.getName(idNumber);
+			String returnHotness = getDB.getHotness(idNumber);
+			String returnDescription = getDB.getDescription(idNumber);
+			getDB.close();
+			
+			girlNameInput.setText(returnName);
+			girlDescription.setText(returnDescription);
+			
+			break;
+
+		case R.id.editEntry :
+			
+			break;
+			
+		case R.id.deleteEntry :
+	
+			break;
+			
+			
 		}
 	}
 

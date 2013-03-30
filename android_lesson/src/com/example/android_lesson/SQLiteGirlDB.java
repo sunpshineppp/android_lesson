@@ -100,9 +100,13 @@ public class SQLiteGirlDB {
 		Cursor callData = GirlSQL.query(DATABASE_TABLE, dataColumns,null,null,null,null, null);
 		String callDataResult = "";
 		
+		// column 0
 		int iRowID = callData.getColumnIndex(KEY_ROWID);
+		// column 1
 		int iName = callData.getColumnIndex(KEY_NAME);
+		// column 2
 		int iHotness = callData.getColumnIndex(KEY_HOTNESS);
+		// column 3
 		int iDescription = callData.getColumnIndex(KEY_DESCRIPTION);
 		
 		for (callData.moveToFirst(); !callData.isAfterLast(); callData.moveToNext()){
@@ -117,6 +121,48 @@ public class SQLiteGirlDB {
 		}
 		
 		return callDataResult;
+	}
+
+	public String getName(long idNumber) {
+		// TODO Auto-generated method stub
+		String[] dataColumns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS, KEY_DESCRIPTION };
+		Cursor callData = GirlSQL.query(DATABASE_TABLE, dataColumns, KEY_ROWID + "=" + idNumber, null,null,null, null);
+		
+		if(callData != null){
+			callData.moveToFirst();
+			// get column 1 => getString(1)
+			String name = callData.getString(1);
+			return name;
+		}		
+		return null;
+	}
+
+	public String getHotness(long idNumber) {
+		// TODO Auto-generated method stub
+		String[] dataColumns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS, KEY_DESCRIPTION };
+		Cursor callData = GirlSQL.query(DATABASE_TABLE, dataColumns, KEY_ROWID + "=" + idNumber, null,null,null, null);
+		
+		if(callData != null){
+			callData.moveToFirst();
+			// get column 2 => getString(2)
+			String hotness = callData.getString(2);
+			return hotness;
+		}		
+		return null;
+	}
+
+	public String getDescription(long idNumber) {
+		// TODO Auto-generated method stub
+		String[] dataColumns = new String[]{KEY_ROWID, KEY_NAME, KEY_HOTNESS, KEY_DESCRIPTION };
+		Cursor callData = GirlSQL.query(DATABASE_TABLE, dataColumns, KEY_ROWID + "=" + idNumber, null,null,null, null);
+		
+		if(callData != null){
+			callData.moveToFirst();
+			// get column 3 => getString(3)
+			String description = callData.getString(1);
+			return description;
+		}		
+		return null;
 	}
 	
 
