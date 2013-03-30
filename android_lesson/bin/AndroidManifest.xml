@@ -191,6 +191,16 @@
             android:label="SQLite Girl DB"
             android:screenOrientation="portrait" >
         </activity>
+                <activity
+            android:name=".AccelerateDEMO"
+            android:label="Accelerate DEMO"
+            android:screenOrientation="portrait" >
+        </activity>
+                <activity
+            android:name=".AccelerateDEMO_createBall"
+            android:label="create Ball"
+            android:screenOrientation="portrait" >
+        </activity>
         
     </application>
 

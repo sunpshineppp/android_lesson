@@ -169,27 +169,28 @@ public final class R {
     }
     public static final class layout {
         public static final int about_app=0x7f030000;
-        public static final int base_ball=0x7f030001;
-        public static final int camera_to_background=0x7f030002;
-        public static final int external_data=0x7f030003;
-        public static final int flipper_demo=0x7f030004;
-        public static final int hit_and_run=0x7f030005;
-        public static final int internal_data=0x7f030006;
-        public static final int love_mail=0x7f030007;
-        public static final int opening=0x7f030008;
-        public static final int run_and_hit=0x7f030009;
-        public static final int share_data_in_preferences=0x7f03000a;
-        public static final int simple_ie=0x7f03000b;
-        public static final int sliding_panel=0x7f03000c;
-        public static final int sqlite_demo=0x7f03000d;
-        public static final int sqlite_view=0x7f03000e;
-        public static final int starting_point=0x7f03000f;
-        public static final int tabs_demo=0x7f030010;
-        public static final int test_start_activity=0x7f030011;
-        public static final int test_start_activity_for_result=0x7f030012;
-        public static final int test_start_activity_for_result_get=0x7f030013;
-        public static final int test_start_activity_get=0x7f030014;
-        public static final int text=0x7f030015;
+        public static final int accelerate_demo=0x7f030001;
+        public static final int base_ball=0x7f030002;
+        public static final int camera_to_background=0x7f030003;
+        public static final int external_data=0x7f030004;
+        public static final int flipper_demo=0x7f030005;
+        public static final int hit_and_run=0x7f030006;
+        public static final int internal_data=0x7f030007;
+        public static final int love_mail=0x7f030008;
+        public static final int opening=0x7f030009;
+        public static final int run_and_hit=0x7f03000a;
+        public static final int share_data_in_preferences=0x7f03000b;
+        public static final int simple_ie=0x7f03000c;
+        public static final int sliding_panel=0x7f03000d;
+        public static final int sqlite_demo=0x7f03000e;
+        public static final int sqlite_view=0x7f03000f;
+        public static final int starting_point=0x7f030010;
+        public static final int tabs_demo=0x7f030011;
+        public static final int test_start_activity=0x7f030012;
+        public static final int test_start_activity_for_result=0x7f030013;
+        public static final int test_start_activity_for_result_get=0x7f030014;
+        public static final int test_start_activity_get=0x7f030015;
+        public static final int text=0x7f030016;
     }
     public static final class menu {
         public static final int option_menu=0x7f090000;
