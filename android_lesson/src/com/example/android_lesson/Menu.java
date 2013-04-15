@@ -19,7 +19,8 @@ public class Menu extends ListActivity {
 			"BallBall", "TrollFaceShooting", "CatNoise",
 			"SlidingPanel", "TabsDemo", "SimpleIE", "FlipperDemo",
 			"ShareDataInPreferences", "InternalData", "ExternalData",
-			"SQLiteDemo", "AccelerateDEMO", "GoogleMapDEMO"};
+			"SQLiteDemo", "AccelerateDEMO", "GoogleMapDEMO",
+			"VoiceListener" };
 
 	//
 	@Override

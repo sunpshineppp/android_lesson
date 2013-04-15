@@ -39,8 +39,8 @@ public final class R {
         public static final int RunnerView=0x7f0a0039;
         public static final int SQLinfo=0x7f0a005f;
         public static final int SlideView=0x7f0a0053;
-        public static final int aboutApp=0x7f0a0084;
-        public static final int aboutUser=0x7f0a0085;
+        public static final int aboutApp=0x7f0a0086;
+        public static final int aboutUser=0x7f0a0087;
         public static final int actionInput=0x7f0a0030;
         public static final int actionT=0x7f0a002f;
         public static final int amountInput=0x7f0a0032;
@@ -50,6 +50,7 @@ public final class R {
         public static final int buBatterAct=0x7f0a0023;
         public static final int buClearHistory=0x7f0a0049;
         public static final int buConfirm=0x7f0a000b;
+        public static final int buGetVoice=0x7f0a0084;
         public static final int buGoBack=0x7f0a0046;
         public static final int buGoForward=0x7f0a0047;
         public static final int buLoadDB=0x7f0a0059;
@@ -93,7 +94,7 @@ public final class R {
         public static final int editEntry=0x7f0a005c;
         public static final int email=0x7f0a002a;
         public static final int enterFeedback=0x7f0a007b;
-        public static final int exit=0x7f0a0087;
+        public static final int exit=0x7f0a0089;
         public static final int feedbackMessage=0x7f0a0079;
         public static final int feedbackSend=0x7f0a007d;
         public static final int fileNameInput=0x7f0a0007;
@@ -132,7 +133,7 @@ public final class R {
         public static final int pass_1=0x7f0a0075;
         public static final int pathOption=0x7f0a000a;
         public static final int picPreview=0x7f0a0004;
-        public static final int preferences=0x7f0a0086;
+        public static final int preferences=0x7f0a0088;
         public static final int rbuBatter=0x7f0a001f;
         public static final int rbuBatter_1=0x7f0a0020;
         public static final int rbuBatter_2=0x7f0a0021;
@@ -166,6 +167,7 @@ public final class R {
         public static final int timeT=0x7f0a0033;
         public static final int toggle=0x7f0a004d;
         public static final int viewFlipper=0x7f0a000d;
+        public static final int voiceList=0x7f0a0085;
         public static final int webSiteInput=0x7f0a0044;
     }
     public static final class layout {
@@ -193,6 +195,7 @@ public final class R {
         public static final int test_start_activity_for_result_get=0x7f030015;
         public static final int test_start_activity_get=0x7f030016;
         public static final int text=0x7f030017;
+        public static final int voice_listener=0x7f030018;
     }
     public static final class menu {
         public static final int option_menu=0x7f090000;

@@ -235,11 +235,17 @@
             android:label="create Ball"
             android:screenOrientation="portrait" >
         </activity>
-         <activity
+        <activity
             android:name=".GoogleMapDEMO"
             android:label="Google Map DEMO"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".VoiceListener"
+            android:label="Voice Listener"
+            android:screenOrientation="portrait" >
+        </activity>
+        
     </application>
 
 </manifest>
