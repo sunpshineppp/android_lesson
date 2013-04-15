@@ -245,6 +245,11 @@
             android:label="Voice Listener"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".TextToVoice"
+            android:label="Text To Voice"
+            android:screenOrientation="portrait" >
+        </activity>
         
     </application>
 
