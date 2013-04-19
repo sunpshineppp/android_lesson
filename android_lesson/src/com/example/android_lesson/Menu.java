@@ -20,7 +20,7 @@ public class Menu extends ListActivity {
 			"SlidingPanel", "TabsDemo", "SimpleIE", "FlipperDemo",
 			"ShareDataInPreferences", "InternalData", "ExternalData",
 			"SQLiteDemo", "AccelerateDEMO", "GoogleMapDEMO",
-			"VoiceListener", "TextToVoice" };
+			"VoiceListener", "TextToVoice", "NotifiyingBar" };
 
 	//
 	@Override
