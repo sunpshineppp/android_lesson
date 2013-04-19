@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".StartingPoint" >
 
@@ -61,13 +63,14 @@
             tools:ignore="HardcodedText,SpUsage" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/hello_land"
+    <com.google.ads.AdView
+        android:id="@+id/adDEMO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="hello, the world is flat now, you know ?"
-        android:textSize="20dp"
-        tools:ignore="HardcodedText,SpUsage" />
+        ads:adUnitId="a151715be2c65fe"
+        ads:adSize="BANNER"
+        ads:loadAdOnCreate="true"/>
+    
+    
 
 </LinearLayout>

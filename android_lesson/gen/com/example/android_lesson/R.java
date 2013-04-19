@@ -44,6 +44,7 @@ public final class R {
         public static final int aboutUser=0x7f0a008a;
         public static final int actionInput=0x7f0a0030;
         public static final int actionT=0x7f0a002f;
+        public static final int adDEMO=0x7f0a0067;
         public static final int amountInput=0x7f0a0032;
         public static final int amountT=0x7f0a0031;
         public static final int analogClock=0x7f0a0035;
@@ -116,7 +117,6 @@ public final class R {
         public static final int handle=0x7f0a0054;
         public static final int handleLock=0x7f0a0050;
         public static final int handleUnlock=0x7f0a0051;
-        public static final int hello_land=0x7f0a0067;
         public static final int ie=0x7f0a004c;
         public static final int image_view_1=0x7f0a000f;
         public static final int image_view_2=0x7f0a0012;

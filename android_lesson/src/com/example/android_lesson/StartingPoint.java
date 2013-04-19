@@ -1,12 +1,15 @@
 package com.example.android_lesson;
 
-import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
 
 public class StartingPoint extends Activity {
 	
@@ -37,6 +40,9 @@ public class StartingPoint extends Activity {
 	welcome = (TextView) findViewById (R.id.startingPointWelcome);
 	result = (TextView) findViewById(R.id.resultDisplay2);
 	count = (TextView) findViewById(R.id.count);
+	
+	AdView ad = (AdView)findViewById(R.id.adDEMO);
+	ad.loadAd(new AdRequest());
 	
 	// set welcome by EditText input from preferences
 	SharedPreferences getUserName = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
