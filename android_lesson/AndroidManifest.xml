@@ -256,6 +256,12 @@
             android:label="Notifiying Bar"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".MusicVolumeController"
+            android:label="Music Volume Controller"
+            android:screenOrientation="portrait" >
+        </activity>
+        
         
         
     </application>
