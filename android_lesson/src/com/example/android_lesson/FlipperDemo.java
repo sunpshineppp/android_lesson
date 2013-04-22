@@ -11,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
+import com.sunpshine.android_lesson.R;
 
 public class FlipperDemo extends Activity implements OnClickListener {
 

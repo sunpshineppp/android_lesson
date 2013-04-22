@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android_lesson"
+    package="com.sunpshine.android_lesson"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -67,7 +67,7 @@
         
         
         <activity
-            android:name=".Opening"
+            android:name="com.example.android_lesson.Opening"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -76,7 +76,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Menu"
+            android:name="com.example.android_lesson.Menu"
             android:label="Lesson Menu"
             android:theme="@android:style/Theme.Light" >
             <intent-filter>
@@ -86,62 +86,62 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StartingPoint"
+            android:name="com.example.android_lesson.StartingPoint"
             android:label="Super Hello World"
             android:theme="@android:style/Theme.Translucent" >
         </activity>
         <activity
-            android:name=".Text"
+            android:name="com.example.android_lesson.Text"
             android:label="Text Trial"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".LoveMail"
+            android:name="com.example.android_lesson.LoveMail"
             android:label="Love Mail"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".CameraToBackground"
+            android:name="com.example.android_lesson.CameraToBackground"
             android:label="Camera to Background"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".BaseBall"
+            android:name="com.example.android_lesson.BaseBall"
             android:label="BaseBall"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".HitAndRun"
+            android:name="com.example.android_lesson.HitAndRun"
             android:label="Hit And Run"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".RunAndHit"
+            android:name="com.example.android_lesson.RunAndHit"
             android:label="Run And Hit"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Test_StartActivity"
+            android:name="com.example.android_lesson.Test_StartActivity"
             android:label="Test_StartActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Test_StartActivityGet"
+            android:name="com.example.android_lesson.Test_StartActivityGet"
             android:label="Test_StartActivityGet"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Test_StartActivityForResult"
+            android:name="com.example.android_lesson.Test_StartActivityForResult"
             android:label="Test_StartActivityForResult"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Test_StartActivityForResult_Get"
+            android:name="com.example.android_lesson.Test_StartActivityForResult_Get"
             android:label="Test_StartActivityForResult_Get"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".AboutApp"
+            android:name="com.example.android_lesson.AboutApp"
             android:label="About App"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" >
@@ -152,12 +152,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutUser"
+            android:name="com.example.android_lesson.AboutUser"
             android:label="About User"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Prefs"
+            android:name="com.example.android_lesson.Prefs"
             android:label="Preferences" >
             <intent-filter>
                 <action android:name="com.example.android_lesson.PREFS" />
@@ -166,67 +166,67 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BallBall"
+            android:name="com.example.android_lesson.BallBall"
             android:label="Ball Ball"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".TrollFaceShooting"
+            android:name="com.example.android_lesson.TrollFaceShooting"
             android:label="Troll Face Shooting"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".TrollfaceMaker"
+            android:name="com.example.android_lesson.TrollfaceMaker"
             android:label="Troll face Maker"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".CatNoise"
+            android:name="com.example.android_lesson.CatNoise"
             android:label="Cat Noise"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".SlidingPanel"
+            android:name="com.example.android_lesson.SlidingPanel"
             android:label="Sliding Panel"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".TabsDemo"
+            android:name="com.example.android_lesson.TabsDemo"
             android:label="Tabs Demo"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".SimpleIE"
+            android:name="com.example.android_lesson.SimpleIE"
             android:label="Simple IE"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".FlipperDemo"
+            android:name="com.example.android_lesson.FlipperDemo"
             android:label="Flipper Demo"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".ShareDataInPreferences"
+            android:name="com.example.android_lesson.ShareDataInPreferences"
             android:label="Share Data In Preferences"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".InternalData"
+            android:name="com.example.android_lesson.InternalData"
             android:label="Internal Data"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".ExternalData"
+            android:name="com.example.android_lesson.ExternalData"
             android:label="External Data"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".SQLiteDemo"
+            android:name="com.example.android_lesson.SQLiteDemo"
             android:label="SQLite Demo"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".SQLiteView"
+            android:name="com.example.android_lesson.SQLiteView"
             android:label="SQLite View"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -236,42 +236,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SQLiteGirlDB"
+            android:name="com.example.android_lesson.SQLiteGirlDB"
             android:label="SQLite Girl DB"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".AccelerateDEMO"
+            android:name="com.example.android_lesson.AccelerateDEMO"
             android:label="Accelerate DEMO"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".AccelerateDEMO_createBall"
+            android:name="com.example.android_lesson.AccelerateDEMO_createBall"
             android:label="create Ball"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".GoogleMapDEMO"
+            android:name="com.example.android_lesson.GoogleMapDEMO"
             android:label="Google Map DEMO"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".VoiceListener"
+            android:name="com.example.android_lesson.VoiceListener"
             android:label="Voice Listener"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".TextToVoice"
+            android:name="com.example.android_lesson.TextToVoice"
             android:label="Text To Voice"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".NotifiyingBar"
+            android:name="com.example.android_lesson.NotifiyingBar"
             android:label="Notifiying Bar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".MusicVolumeController"
+            android:name="com.example.android_lesson.MusicVolumeController"
             android:label="Music Volume Controller"
             android:screenOrientation="portrait" >
         </activity>

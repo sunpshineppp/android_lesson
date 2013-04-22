@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
+import com.sunpshine.android_lesson.R;
 
 public class HitAndRun extends Activity implements OnClickListener,
 		OnCheckedChangeListener {

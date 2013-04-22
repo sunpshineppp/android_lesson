@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+import com.sunpshine.android_lesson.R;
 
 public class Text extends Activity implements View.OnClickListener {
 

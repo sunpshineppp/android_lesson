@@ -12,6 +12,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import com.sunpshine.android_lesson.R;
 
 public class AccelerateDEMO extends Activity implements SensorEventListener {
 

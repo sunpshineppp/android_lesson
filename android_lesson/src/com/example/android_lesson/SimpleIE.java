@@ -9,6 +9,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
+import com.sunpshine.android_lesson.R;
 
 public class SimpleIE extends Activity implements OnClickListener {
 

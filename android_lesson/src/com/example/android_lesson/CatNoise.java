@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
+import com.sunpshine.android_lesson.R;
 
 public class CatNoise extends Activity implements OnClickListener, OnLongClickListener{
 

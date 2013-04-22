@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import com.sunpshine.android_lesson.R;
 
 public class LoveMail extends Activity implements View.OnClickListener {
 

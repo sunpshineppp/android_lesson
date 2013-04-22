@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import com.sunpshine.android_lesson.R;
 
 public class MusicVolumeController extends Activity implements OnSeekBarChangeListener {
 

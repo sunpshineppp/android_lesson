@@ -11,6 +11,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import com.sunpshine.android_lesson.R;
 
 public class TrollFaceShooting extends Activity implements OnTouchListener {
 

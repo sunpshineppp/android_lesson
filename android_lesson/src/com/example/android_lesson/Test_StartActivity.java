@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import com.sunpshine.android_lesson.R;
 
 public class Test_StartActivity extends Activity implements OnClickListener {
 

@@ -10,6 +10,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import com.sunpshine.android_lesson.R;
 
 public class Menu extends ListActivity {
 

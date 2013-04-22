@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
+import com.sunpshine.android_lesson.R;
 
 public class TabsDemo extends Activity implements OnClickListener {
 

@@ -12,6 +12,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.SlidingDrawer;
 import android.widget.SlidingDrawer.OnDrawerCloseListener;
 import android.widget.SlidingDrawer.OnDrawerOpenListener;
+import com.sunpshine.android_lesson.R;
 
 public class SlidingPanel extends Activity implements OnClickListener,
 		OnCheckedChangeListener, OnDrawerOpenListener, OnDrawerCloseListener {

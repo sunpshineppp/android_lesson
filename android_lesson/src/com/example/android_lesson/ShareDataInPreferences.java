@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import com.sunpshine.android_lesson.R;
 
 public class ShareDataInPreferences extends Activity implements OnClickListener {
 

@@ -13,6 +13,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import com.sunpshine.android_lesson.R;
 
 public class CameraToBackground extends Activity implements OnClickListener {
 

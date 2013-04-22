@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import com.sunpshine.android_lesson.R;
 
 public class BaseBall extends Activity implements OnClickListener{
 	

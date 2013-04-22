@@ -11,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import com.sunpshine.android_lesson.R;
 
 public class VoiceListener extends Activity implements OnClickListener{
 

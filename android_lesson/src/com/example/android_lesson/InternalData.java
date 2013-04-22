@@ -16,6 +16,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import com.sunpshine.android_lesson.R;
 
 public class InternalData extends Activity implements OnClickListener {
 

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import com.sunpshine.android_lesson.R;
 
 public class SQLiteDemo extends Activity implements OnClickListener{
 	

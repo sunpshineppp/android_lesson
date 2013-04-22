@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import com.sunpshine.android_lesson.R;
 
 public class NotifiyingBar extends Activity implements OnClickListener{
 

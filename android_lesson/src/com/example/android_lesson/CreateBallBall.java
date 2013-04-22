@@ -11,6 +11,7 @@ import android.graphics.Paint.Align;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.view.View;
+import com.sunpshine.android_lesson.R;
 
 public class CreateBallBall extends View{
 	

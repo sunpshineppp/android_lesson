@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
+import com.sunpshine.android_lesson.R;
 
 public class StartingPoint extends Activity {
 	
